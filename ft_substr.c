@@ -15,7 +15,7 @@
 #include <stdio.h>
 #include "libft.h"
 
-static void	cpy(char *dst, char *src, int len)
+static void	cpy(char *dst, char const *src, int len)
 {
 	int	i;
 

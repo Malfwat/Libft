@@ -15,7 +15,7 @@
 
 bool	is_white_space(char c)
 {
-	return ((nptr[i] <= 13 && nptr[i] >= 9) || nptr[i] == 32);
+	return ((c <= 13 && c >= 9) || c == 32);
 }
 
 bool	is_digit(char c)

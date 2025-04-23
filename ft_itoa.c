@@ -58,8 +58,3 @@ char	*ft_itoa(int n)
 	fill_str(len, n, str, &i);
 	return (str);
 }
-
-int	main(void)
-{
-	printf("%s\n", ft_itoa(INT_MIN));
-}
