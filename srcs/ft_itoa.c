@@ -28,13 +28,8 @@ static unsigned int	find_len(unsigned int nbr)
 	return (i);
 }
 
-static void	fill_str(unsigned int len, int n, char *str, unsigned int *i)
+static void	fill_str(unsigned int len, long n, char *str, unsigned int *i)
 {
-	if (n == INT_MIN)
-	{
-		str[len -1] = '8';
-		n = (n / 10) * -1;
-	}
 	if (n < 0)
 		n *= -1;
 	if (n > 9)
@@ -62,4 +57,9 @@ char	*ft_itoa(int n)
 		str[i++] = '-';
 	fill_str(len, n, str, &i);
 	return (str);
+}
+
+int	main(void)
+{
+	printf("%s\n", ft_itoa(INT_MIN));
 }
