@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amouflet <amouflet@student.42.fr>          +#+  +:+       +#+        */
+/*   By: admoufle <admoufle@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/07 14:23:35 by amouflet          #+#    #+#             */
-/*   Updated: 2022/11/10 18:12:38 by amouflet         ###   ########.fr       */
+/*   Created: 2025/04/24 11:24:30 by admoufle          #+#    #+#             */
+/*   Updated: 2025/04/24 11:24:31 by admoufle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include <stddef.h>
 
