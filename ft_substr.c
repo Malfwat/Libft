@@ -15,27 +15,12 @@
 #include <stdio.h>
 #include "libft.h"
 
-static void	cpy(char *dst, char const *src, int len)
-{
-	int	i;
-
-	i = 0;
-	while (i < len && src[i])
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = 0;
-}
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char			*str;
 	unsigned int	x;
 
-	x = 0;
-	while (s && s[x])
-		x++;
+	x = ft_strlen(s);
 	if (start >= x)
 		return (ft_calloc(sizeof(char), 1));
 	if (len > x - start)
@@ -43,6 +28,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str = malloc(sizeof(char) * (len + 1));
 	if (str == NULL)
 		return (NULL);
-	cpy(str, s + start, len);
+	str[len] = 0;
+	ft_memcpy(str, s + start, len);
 	return (str);
 }
